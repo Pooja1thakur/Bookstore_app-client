@@ -16,7 +16,7 @@ const history=useNavigate()
 
   useEffect(()=>{
 const fetchHandler=async()=>{
-  await axios.get(`http://localhost:5000/books/${id}`)
+  await axios.get(`https://backend-go4k.onrender.com/books/${id}`)
   .then((res)=>res.data)
   .then(data=>setInputs(data.book))
 };
