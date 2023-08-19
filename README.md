@@ -1,3 +1,29 @@
+# Blog-App-using-MERN-stack
+Blog App
+
+# Functionalities
+Authentication
+Create blog
+Delete Blog
+Update Blog
+View other user blog
+
+# Frontend
+React
+Node JS
+Express
+MongoDB
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

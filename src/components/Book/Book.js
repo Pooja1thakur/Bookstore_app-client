@@ -16,17 +16,26 @@ await axios
  .then(()=>history("/"))
 .then(()=>history("/books"))
 };
+
+
+
 return (
-    <div className='card'>
+  
+    <div className='container'>
+      <div className='card'>
       <img src={image} alt={name}/>
-      <article>By {author}</article>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <h3>Rs:- {price}</h3>
-      <Button LinkComponent={Link} to={`/books/${_id}`} sx={{mt:'auto',backgroundColor:'lightblue',marginBottom:'3px'}} >Update</Button>
-      <Button onClick={deleteHandler} sx={{mt:'auto',backgroundColor:'lightblue'}}>Delete</Button>
+    <article>By {author}</article>
+    <h3>{name}</h3>
+    
+    <p>{description}</p>
+     <h3>Rs:- {price}</h3>
+     <div className='btn'>
+     <Button sx={{fontWeight:'bold'}} LinkComponent={Link} to={`/books/${_id}`} >Update</Button>
+     <Button sx={{ fontWeight:'bold'}} onClick={deleteHandler} >Delete</Button>
+     </div>
+     </div>
     </div>
   )
 }
 
-export default Book
+export default Book;

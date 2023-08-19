@@ -12,13 +12,12 @@ const [inputs,setInputs]=useState({
   description:'',
   price:'',
   author:'',
-  
   image:''
 
 })
 
 
-const [checked,setchecked]=useState(false)
+const [checked,setchecked]=useState(false);
 
 
 
@@ -59,7 +58,7 @@ const handleSubmit=(e)=>{
 
   return (
 <form onSubmit={handleSubmit}>
-<Box display="flex" flexDirection="column" justifyContent={'center'} maxWidth={700} alignContent={'center'} alignSelf={'center'} marginLeft={'auto'} marginRight={'auto'} marginTop={10}>
+<Box display="flex" flexDirection="column" justifyContent={'center'} maxWidth={700} alignContent={'center'} alignSelf={'center'} marginLeft={'auto'} marginRight={'auto'} marginTop={5}>
 
 <FormLabel>Name</FormLabel>
 <TextField   value={inputs.name} onChange={handleChange}   margin='normal'  fullWidth variant='outlined' name="name" />
