@@ -34,7 +34,7 @@ setInputs((prevState)=>({
 
 
 const sendRequest=async()=>{
-  await axios.post("https://backend-go4k.onrender.com/books",{
+  await axios.post("https://book-server-fk3r.onrender.com/books",{
   name:String(inputs.name),
   author:String(inputs.author),
   description:String(inputs.description),

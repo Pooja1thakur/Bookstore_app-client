@@ -16,7 +16,7 @@ const history=useNavigate()
 
   useEffect(()=>{
 const fetchHandler=async()=>{
-  await axios.get(`https://backend-go4k.onrender.com/books/${id}`)
+  await axios.get(`https://book-server-fk3r.onrender.com/books/${id}`)
   .then((res)=>res.data)
   .then(data=>setInputs(data.book))
 };
@@ -26,7 +26,7 @@ fetchHandler()
 
 
  const sendRequest=async()=>{
-  await axios.put(`http://localhost:5000/books/${id}`,{
+  await axios.put(`https://book-server-fk3r.onrender.com/books/${id}`,{
     name:String(inputs.name),
     author:String(inputs.author),
     description:String(inputs.description),
